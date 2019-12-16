@@ -1,0 +1,41 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App h1{
+  text-align: center;
+  color: #fff;
+  letter-spacing: 4px;
+  font-size: 3.5rem;
+  
+}
+table{
+  width:93vw;
+  color: #fff;
+  border-collapse: collapse;
+
+}
+td{
+  position: relative;
+  cursor: pointer;
+  
+}
+td::after{
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+td p{
+  position: absolute;
+  width: calc(93vw/5);
+  height: calc(93vw/5);
+  text-align: center;
+  word-spacing: 93vw;
+  word-wrap: break-word;
+}
+tr,td{
+  border:solid #fff 1.5px;
+  
+}
